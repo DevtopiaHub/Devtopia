@@ -1,68 +1,62 @@
 /**
- * text-analysis-pipeline - Comprehensive text analysis combining cleaning, counting, and hashing
- * Builds on: text-clean, text-word-count, hash-sha256 (via devtopia-runtime)
+ * text-analysis-pipeline - Comprehensive text analysis combining cleaning, word count, and sentence analysis
+ * Builds on: text-word-count, text-sentence-split, text-clean (via devtopia-runtime)
  *
- * Composes text-clean: Normalize text: trim, collapse whitespace, optional lowercase
  * Composes text-word-count: Count words and characters in text
- * Composes hash-sha256: Compute SHA-256 hash of input text
+ * Composes text-sentence-split: Split text into sentences with basic punctuation heuristics
+ * Composes text-clean: Normalize text: trim, collapse whitespace, optional lowercase
+ *
+ * @param {Object} params
+ * @param {string} params.text - Text to analyze
+ * @param {boolean} [params.lowercase] - Whether to lowercase during cleaning (default: false)
+ * @returns {Object} Pipeline result with comprehensive text analysis
  */
 
 const { devtopiaRun } = require('./devtopia-runtime');
 const input = JSON.parse(process.argv[2] || '{}');
 
-// Validate required input
 if (!input.text || typeof input.text !== 'string') {
   console.log(JSON.stringify({ ok: false, error: 'Missing required field: text' }));
   process.exit(1);
 }
 
 try {
-  // Step 1: Clean and normalize the text
+  // Step 1: Clean text first for better analysis
   const cleanResult = devtopiaRun('text-clean', { 
     text: input.text,
-    lowercase: input.lowercase !== false, // default true
-    collapseWhitespace: input.collapseWhitespace !== false // default true
+    lowercase: input.lowercase || false
   });
-
+  
   if (!cleanResult.ok) {
-    console.log(JSON.stringify({ ok: false, error: `Text cleaning failed: ${cleanResult.error}` }));
+    console.log(JSON.stringify({ ok: false, error: 'Text cleaning failed', details: cleanResult.error }));
     process.exit(1);
   }
 
-  // Step 2: Count words and characters in the cleaned text
-  const countResult = devtopiaRun('text-word-count', { 
-    text: cleanResult.cleaned,
-    includeNumbers: input.includeNumbers || false
-  });
-
-  if (!countResult.ok) {
-    console.log(JSON.stringify({ ok: false, error: `Word counting failed: ${countResult.error}` }));
+  // Step 2: Count words and characters in cleaned text
+  const wordCountResult = devtopiaRun('text-word-count', { text: cleanResult.cleaned });
+  
+  if (!wordCountResult.ok) {
+    console.log(JSON.stringify({ ok: false, error: 'Word count failed', details: wordCountResult.error }));
     process.exit(1);
   }
 
-  // Step 3: Compute SHA-256 hash of the cleaned text
-  const hashResult = devtopiaRun('hash-sha256', { 
-    text: cleanResult.cleaned
-  });
-
-  if (!hashResult.ok) {
-    console.log(JSON.stringify({ ok: false, error: `Hashing failed: ${hashResult.error}` }));
+  // Step 3: Split text into sentences
+  const sentenceResult = devtopiaRun('text-sentence-split', { text: cleanResult.cleaned });
+  
+  if (!sentenceResult.ok) {
+    console.log(JSON.stringify({ ok: false, error: 'Sentence splitting failed', details: sentenceResult.error }));
     process.exit(1);
   }
 
-  // Combine all results into comprehensive analysis
   console.log(JSON.stringify({
     ok: true,
     original: input.text,
     cleaned: cleanResult.cleaned,
-    statistics: {
-      words: countResult.words,
-      characters: countResult.characters,
-      charactersNoSpaces: countResult.charactersNoSpaces,
-      sentences: countResult.sentences
-    },
-    hash: hashResult.hash,
-    steps: ["text-clean", "text-word-count", "hash-sha256"]
+    wordCount: wordCountResult.words || 0,
+    characterCount: wordCountResult.characters || 0,
+    sentenceCount: sentenceResult.sentences ? sentenceResult.sentences.length : 0,
+    sentences: sentenceResult.sentences || [],
+    steps: ["text-clean", "text-word-count", "text-sentence-split"]
   }));
 } catch (error) {
   console.log(JSON.stringify({ ok: false, error: error.message }));
