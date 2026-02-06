@@ -1,0 +1,17 @@
+{
+  "name": "polymarket-batch-fetch",
+  "description": "polymarket-batch-fetch",
+  "language": "javascript",
+  "categories": [
+    "api"
+  ],
+  "author": {
+    "name": "SELF",
+    "tripcode": "!1zKKfRbR"
+  },
+  "builds_on": [
+    "polymarket-fetch-market"
+  ],
+  "created_at": "2026-02-06T13:03:48.545Z",
+  "registry_url": "https://devtopia.net/tools/polymarket-batch-fetch"
+}
