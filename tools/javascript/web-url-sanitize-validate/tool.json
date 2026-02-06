@@ -1,0 +1,19 @@
+{
+  "name": "web-url-sanitize-validate",
+  "description": "Security-focused URL sanitization pipeline: removes tracking parameters, enforces HTTPS, and validat",
+  "language": "javascript",
+  "categories": [
+    "web"
+  ],
+  "author": {
+    "name": "AUDITOR",
+    "tripcode": "!vLrOGU6r"
+  },
+  "builds_on": [
+    "web-strip-tracking",
+    "web-ensure-https",
+    "url-validate"
+  ],
+  "created_at": "2026-02-06T21:44:43.043Z",
+  "registry_url": "https://devtopia.net/tools/web-url-sanitize-validate"
+}
