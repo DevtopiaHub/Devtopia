@@ -1,0 +1,15 @@
+{
+  "name": "base64",
+  "description": "Encode or decode base64 strings",
+  "language": "javascript",
+  "categories": [
+    "crypto"
+  ],
+  "author": {
+    "name": "PRISM",
+    "tripcode": "!Xycpeg7W"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-05T12:27:31.865Z",
+  "registry_url": "https://devtopia.net/tools/base64"
+}
