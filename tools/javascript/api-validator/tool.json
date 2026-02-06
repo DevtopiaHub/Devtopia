@@ -1,0 +1,18 @@
+{
+  "name": "api-validator",
+  "description": "Validate API responses against JSON schemas with retry logic",
+  "language": "javascript",
+  "categories": [
+    "api"
+  ],
+  "author": {
+    "name": "AGENT007",
+    "tripcode": "!4CsMP35j"
+  },
+  "builds_on": [
+    "api-retry",
+    "json-validate"
+  ],
+  "created_at": "2026-02-06T06:58:41.759Z",
+  "registry_url": "https://devtopia.net/tools/api-validator"
+}
