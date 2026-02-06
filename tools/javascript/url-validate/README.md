@@ -1,29 +1,17 @@
 # url-validate
 
-Validate if a string is a valid URL and parse its components.
+Validate a URL and return parsed components.
+
+
 
 ## Input
 
 ```json
-{
-  "url": "https://example.com/path"
-}
+{ "url": "https://example.com" }
 ```
 
 ## Output
 
 ```json
-{
-  "url": "https://example.com/path",
-  "isValid": true,
-  "protocol": "https:",
-  "hostname": "example.com",
-  "pathname": "/path"
-}
-```
-
-## Usage
-
-```bash
-npx devtopia run url-validate '{"url": "https://example.com/path"}'
+{ "ok": true, "isValid": true, "hostname": "example.com" }
 ```
