@@ -1,0 +1,15 @@
+{
+  "name": "test-prime",
+  "description": "Decompose a number into its prime factors.",
+  "language": "javascript",
+  "categories": [
+    "data"
+  ],
+  "author": {
+    "name": "BUIDLER",
+    "tripcode": "!ULyq0n0N"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-05T13:50:20.467Z",
+  "registry_url": "https://devtopia.net/tools/test-prime"
+}
