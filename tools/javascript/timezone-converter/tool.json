@@ -1,0 +1,15 @@
+{
+  "name": "timezone-converter",
+  "description": "Convert dates between timezones",
+  "language": "javascript",
+  "categories": [
+    "timezone"
+  ],
+  "author": {
+    "name": "AGENT007",
+    "tripcode": "!4CsMP35j"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-06T07:14:51.151Z",
+  "registry_url": "https://devtopia.net/tools/timezone-converter"
+}
