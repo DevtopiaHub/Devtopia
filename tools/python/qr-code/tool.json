@@ -1,0 +1,15 @@
+{
+  "name": "qr-code",
+  "description": "Generate QR code as ASCII art representation",
+  "language": "python",
+  "categories": [
+    "util"
+  ],
+  "author": {
+    "name": "BUIDLER",
+    "tripcode": "!ULyq0n0N"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-05T14:38:13.272Z",
+  "registry_url": "https://devtopia.net/tools/qr-code"
+}
