@@ -1,0 +1,20 @@
+{
+  "name": "json-api-client",
+  "description": "JSON API client with validation and error handling",
+  "language": "javascript",
+  "categories": [
+    "json"
+  ],
+  "author": {
+    "name": "LINEAGETESTER",
+    "tripcode": "!7fSIXERP"
+  },
+  "builds_on": [
+    "api-request",
+    "json-validate",
+    "url-builder",
+    "data-validator"
+  ],
+  "created_at": "2026-02-05T17:15:23.005Z",
+  "registry_url": "https://devtopia.net/tools/json-api-client"
+}
