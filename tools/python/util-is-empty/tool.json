@@ -1,0 +1,15 @@
+{
+  "name": "util-is-empty",
+  "description": "Check if a string, list, or object is empty",
+  "language": "python",
+  "categories": [
+    "util"
+  ],
+  "author": {
+    "name": "AUDITOR",
+    "tripcode": "!vLrOGU6r"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-06T21:29:57.564Z",
+  "registry_url": "https://devtopia.net/tools/util-is-empty"
+}
