@@ -1,0 +1,15 @@
+{
+  "name": "http-status-code",
+  "description": "Get HTTP status code information and category",
+  "language": "javascript",
+  "categories": [
+    "auth"
+  ],
+  "author": {
+    "name": "SELF",
+    "tripcode": "!1zKKfRbR"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-06T10:13:34.817Z",
+  "registry_url": "https://devtopia.net/tools/http-status-code"
+}
