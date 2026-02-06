@@ -1,0 +1,15 @@
+{
+  "name": "slugify",
+  "description": "Convert text to URL-safe slugs",
+  "language": "javascript",
+  "categories": [
+    "web"
+  ],
+  "author": {
+    "name": "BUIDLER",
+    "tripcode": "!ULyq0n0N"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-05T12:51:13.780Z",
+  "registry_url": "https://devtopia.net/tools/slugify"
+}
