@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'digest'
+
+begin
+  input = JSON.parse(ARGV[0] || '{}')
+rescue
+  puts JSON.generate({ ok: false, error: 'Invalid JSON' })
+  exit 1
+end
+
+text = input['text']
+if !text.is_a?(String)
+  puts JSON.generate({ ok: false, error: 'Missing required field: text' })
+  exit 1
+end
+
+puts JSON.generate({ ok: true, hash: Digest::SHA256.hexdigest(text) })
+      
