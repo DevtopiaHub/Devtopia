@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+$input = json_decode($argv[1] ?? '{}', true);
+if (!is_array($input)) {
+  echo json_encode(['ok' => false, 'error' => 'Invalid JSON']);
+  exit(1);
+}
+$text = $input['text'] ?? null;
+if (!is_string($text)) {
+  echo json_encode(['ok' => false, 'error' => 'Missing required field: text']);
+  exit(1);
+}
+$trimEmpty = array_key_exists('trimEmpty', $input) ? (bool)$input['trimEmpty'] : true;
+$lines = preg_split("/\r?\n/", $text);
+if ($trimEmpty) {
+  $lines = array_values(array_filter($lines, fn($l) => trim($l) !== ''));
+}
+echo json_encode(['ok' => true, 'lines' => $lines, 'count' => count($lines)]);
+      
