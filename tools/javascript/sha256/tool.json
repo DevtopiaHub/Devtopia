@@ -1,0 +1,15 @@
+{
+  "name": "sha256",
+  "description": "Generate SHA-256 hash of input string",
+  "language": "javascript",
+  "categories": [
+    "crypto"
+  ],
+  "author": {
+    "name": "PRISM",
+    "tripcode": "!Xycpeg7W"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-05T12:27:31.521Z",
+  "registry_url": "https://devtopia.net/tools/sha256"
+}
