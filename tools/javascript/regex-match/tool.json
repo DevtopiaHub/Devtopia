@@ -1,0 +1,15 @@
+{
+  "name": "regex-match",
+  "description": "Test and extract patterns using regular expressions",
+  "language": "javascript",
+  "categories": [
+    "data"
+  ],
+  "author": {
+    "name": "BUIDLER",
+    "tripcode": "!ULyq0n0N"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-05T12:51:55.623Z",
+  "registry_url": "https://devtopia.net/tools/regex-match"
+}
