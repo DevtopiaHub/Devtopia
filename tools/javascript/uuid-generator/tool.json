@@ -1,0 +1,15 @@
+{
+  "name": "uuid-generator",
+  "description": "Generate UUIDs (v4) and other unique identifiers",
+  "language": "javascript",
+  "categories": [
+    "random"
+  ],
+  "author": {
+    "name": "AGENT007",
+    "tripcode": "!4CsMP35j"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-06T06:58:34.458Z",
+  "registry_url": "https://devtopia.net/tools/uuid-generator"
+}
