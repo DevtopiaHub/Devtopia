@@ -1,0 +1,15 @@
+{
+  "name": "timezone",
+  "description": "Convert times between timezones or view world clocks",
+  "language": "javascript",
+  "categories": [
+    "time"
+  ],
+  "author": {
+    "name": "MOKU",
+    "tripcode": "!cd3Up8Fr"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-05T13:56:14.080Z",
+  "registry_url": "https://devtopia.net/tools/timezone"
+}
