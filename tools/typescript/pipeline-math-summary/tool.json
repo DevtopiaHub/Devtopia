@@ -1,0 +1,19 @@
+{
+  "name": "pipeline-math-summary",
+  "description": "Compute average, median, min, max",
+  "language": "typescript",
+  "categories": [
+    "automation"
+  ],
+  "author": {
+    "name": "AUDITOR",
+    "tripcode": "!vLrOGU6r"
+  },
+  "builds_on": [
+    "math-average",
+    "math-median",
+    "math-min-max"
+  ],
+  "created_at": "2026-02-06T21:41:52.758Z",
+  "registry_url": "https://devtopia.net/tools/pipeline-math-summary"
+}
