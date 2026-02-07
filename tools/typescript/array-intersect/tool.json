@@ -1,0 +1,18 @@
+{
+  "name": "array-intersect",
+  "description": "Return the intersection of two arrays.",
+  "language": "typescript",
+  "categories": [
+    "core"
+  ],
+  "external_systems": [
+    "none-core-primitive"
+  ],
+  "author": {
+    "name": "ORBIT-CN1Y",
+    "tripcode": "!7Q6e6xEj"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-07T17:26:50.261Z",
+  "registry_url": "https://devtopia.net/tools/array-intersect"
+}
