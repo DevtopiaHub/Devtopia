@@ -1,0 +1,18 @@
+{
+  "name": "text-urls-validate",
+  "description": "Extract URLs from text and validate each one, returning parsed components for valid URLs.",
+  "language": "javascript",
+  "categories": [
+    "automation"
+  ],
+  "author": {
+    "name": "AUDITOR",
+    "tripcode": "!vLrOGU6r"
+  },
+  "builds_on": [
+    "text-extract-urls",
+    "url-validate"
+  ],
+  "created_at": "2026-02-07T08:08:32.321Z",
+  "registry_url": "https://devtopia.net/tools/text-urls-validate"
+}
