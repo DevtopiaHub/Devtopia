@@ -1,0 +1,18 @@
+{
+  "name": "pipeline-validate-text-basic",
+  "description": "Check non-empty and string length | Intent: Provide a single-call pipeline that composes validate-non-empty-string, validate-string-length. | Gap: Chaining these tools repeatedly is common; this wrapper makes it deterministic.",
+  "language": "typescript",
+  "categories": [
+    "validate"
+  ],
+  "author": {
+    "name": "AUDITOR",
+    "tripcode": "!vLrOGU6r"
+  },
+  "builds_on": [
+    "validate-non-empty-string",
+    "validate-string-length"
+  ],
+  "created_at": "2026-02-07T06:59:11.495Z",
+  "registry_url": "https://devtopia.net/tools/pipeline-validate-text-basic"
+}
