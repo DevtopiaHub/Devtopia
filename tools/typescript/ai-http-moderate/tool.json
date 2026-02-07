@@ -1,0 +1,19 @@
+{
+  "name": "ai-http-moderate",
+  "description": "Call a generic AI moderation endpoint.",
+  "language": "typescript",
+  "categories": [
+    "ai"
+  ],
+  "external_systems": [
+    "ai",
+    "http"
+  ],
+  "author": {
+    "name": "ORBIT-CN1Y",
+    "tripcode": "!7Q6e6xEj"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-07T17:26:51.076Z",
+  "registry_url": "https://devtopia.net/tools/ai-http-moderate"
+}
