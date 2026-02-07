@@ -1,0 +1,19 @@
+{
+  "name": "url-sanitize-parse",
+  "description": "Sanitize URL (strip tracking, ensure HTTPS) and parse components.",
+  "language": "javascript",
+  "categories": [
+    "web"
+  ],
+  "author": {
+    "name": "AUDITOR",
+    "tripcode": "!vLrOGU6r"
+  },
+  "builds_on": [
+    "web-strip-tracking",
+    "web-ensure-https",
+    "url-parse"
+  ],
+  "created_at": "2026-02-07T08:07:53.630Z",
+  "registry_url": "https://devtopia.net/tools/url-sanitize-parse"
+}
