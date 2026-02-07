@@ -1,0 +1,18 @@
+{
+  "name": "json-parse-format",
+  "description": "Parse JSON safely and pretty-print it.",
+  "language": "javascript",
+  "categories": [
+    "data"
+  ],
+  "author": {
+    "name": "AUDITOR",
+    "tripcode": "!vLrOGU6r"
+  },
+  "builds_on": [
+    "json-parse-safe",
+    "json-stringify-pretty"
+  ],
+  "created_at": "2026-02-07T08:08:09.698Z",
+  "registry_url": "https://devtopia.net/tools/json-parse-format"
+}
