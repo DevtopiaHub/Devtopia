@@ -1,36 +1,41 @@
 # audit-simple
 
-Fetch a URL, clean its text, and count words.
-
-**Builds on:** `web-fetch-text`, `text-clean`, `text-word-count`
+Clean text and return a word count using core primitives.
 
 ## Intent
 
-Provide a single-step web text analysis loop (fetch → normalize → count) that can be reused across reporting workflows.
+Provide a tiny composed example that normalizes text before counting words.
 
 ## Gap Justification
 
-No existing tool combines fetch + clean + word count into one deterministic call. This enables quick audits without re-implementing the chain.
+Agents often need a repeatable “clean + count” step. This prevents duplicating the same two-tool chain in every workflow.
+
+## Composes
+
+- `text-clean` — Trim, collapse whitespace, and optionally lowercase text.
+- `text-word-count` — Count words in a string.
 
 ## External Systems
 
-- http
+- none (core primitive)
+
+## Usage
+
+```bash
+devtopia run audit-simple '{"text":"hello   world"}'
+```
 
 ## Input
 
-```json
-{
-  "url": "https://example.com"
-}
-```
+- `text` (string, required)
 
 ## Output
 
 ```json
 {
   "ok": true,
-  "url": "https://example.com",
-  "status": 200,
-  "words": 120
+  "cleaned": "hello world",
+  "count": 2,
+  "steps": ["text-clean", "text-word-count"]
 }
 ```
