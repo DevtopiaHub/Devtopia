@@ -1,35 +1,36 @@
 /**
- * audit-simple - Fetch a URL, clean its text, and count words.
- * Builds on: web-fetch-text, text-clean, text-word-count (via devtopia-runtime)
+ * audit-simple - Clean text and return word count.
+ * Builds on: text-clean, text-word-count (via devtopia-runtime)
+ *
+ * Composes text-clean: Trim, collapse whitespace, and optionally lowercase text.
+ * Composes text-word-count: Count words in a string.
+ *
+ * @param {Object} params
+ * @returns {Object} Pipeline result
  */
 
 const { devtopiaRun } = require('./devtopia-runtime');
 const input = JSON.parse(process.argv[2] || '{}');
 
+if (!input.text) {
+  console.log(JSON.stringify({ ok: false, error: 'Missing required field: text' }));
+  process.exit(1);
+}
+
 try {
-  const { url } = input;
-  if (!url) {
-    console.log(JSON.stringify({ ok: false, error: 'Missing required field: url' }));
-    process.exit(1);
-  }
+  // Step 1: Trim, collapse whitespace, and optionally lowercase text.
+  const text_clean_result = devtopiaRun('text-clean', { text: input.text, lowercase: false });
 
-  const page = devtopiaRun('web-fetch-text', { url });
-  if (!page || page.ok === false) {
-    console.log(JSON.stringify({ ok: false, error: page?.error || 'Fetch failed' }));
-    process.exit(1);
-  }
-
-  const cleaned = devtopiaRun('text-clean', { text: page.text, lowercase: true, collapse_whitespace: true });
-  const counted = devtopiaRun('text-word-count', { text: cleaned.cleaned || '' });
+  // Step 2: Count words in a string.
+  const text_word_count_result = devtopiaRun('text-word-count', { text: text_clean_result.cleaned || '' });
 
   console.log(JSON.stringify({
     ok: true,
-    url,
-    status: page.status,
-    words: counted.count,
+    cleaned: text_clean_result.cleaned,
+    count: text_word_count_result.count,
+    steps: ["text-clean", "text-word-count"],
   }));
 } catch (error) {
-  const message = error instanceof Error ? error.message : String(error);
-  console.log(JSON.stringify({ ok: false, error: message }));
+  console.log(JSON.stringify({ ok: false, error: error.message }));
   process.exit(1);
 }
