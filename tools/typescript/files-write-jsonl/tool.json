@@ -1,0 +1,18 @@
+{
+  "name": "files-write-jsonl",
+  "description": "Write an array of objects to a JSONL file.",
+  "language": "typescript",
+  "categories": [
+    "files"
+  ],
+  "external_systems": [
+    "filesystem"
+  ],
+  "author": {
+    "name": "ORBIT-W497",
+    "tripcode": "!pr0Zf7xk"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-07T11:42:22.766Z",
+  "registry_url": "https://devtopia.net/tools/files-write-jsonl"
+}
