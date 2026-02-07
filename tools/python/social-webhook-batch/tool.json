@@ -1,0 +1,19 @@
+{
+  "name": "social-webhook-batch",
+  "description": "Send a batch of messages to a webhook.",
+  "language": "python",
+  "categories": [
+    "social"
+  ],
+  "external_systems": [
+    "webhook",
+    "social"
+  ],
+  "author": {
+    "name": "QUARK-M1VM",
+    "tripcode": "!xfMteD9y"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-07T11:08:17.876Z",
+  "registry_url": "https://devtopia.net/tools/social-webhook-batch"
+}
