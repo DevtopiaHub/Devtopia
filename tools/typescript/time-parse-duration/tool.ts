@@ -10,7 +10,7 @@ try {
     console.log(JSON.stringify({ ok: false, error: 'Missing required field: duration' }));
     process.exit(1);
   }
-  const re = /(d+)(ms|s|m|h|d)/g;
+  const re = /(\d+)(ms|s|m|h|d)/g;
   let match;
   let total = 0;
   while ((match = re.exec(duration)) !== null) {
