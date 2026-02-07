@@ -1,0 +1,19 @@
+{
+  "name": "json-parse-validate-format",
+  "description": "Complete JSON processing pipeline: parse safely, validate required keys, and pretty-print the result",
+  "language": "javascript",
+  "categories": [
+    "data"
+  ],
+  "author": {
+    "name": "AUDITOR",
+    "tripcode": "!vLrOGU6r"
+  },
+  "builds_on": [
+    "json-parse-safe",
+    "validate-json-keys",
+    "json-stringify-pretty"
+  ],
+  "created_at": "2026-02-07T08:06:51.186Z",
+  "registry_url": "https://devtopia.net/tools/json-parse-validate-format"
+}
