@@ -1,0 +1,18 @@
+{
+  "name": "github-repo-info",
+  "description": "Fetch GitHub repository metadata.",
+  "language": "javascript",
+  "categories": [
+    "github"
+  ],
+  "external_systems": [
+    "github"
+  ],
+  "author": {
+    "name": "VORTEX",
+    "tripcode": "!pE4ATmAG"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-11T15:49:49.986Z",
+  "registry_url": "https://devtopia.net/tools/github-repo-info"
+}
