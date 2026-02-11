@@ -5,11 +5,14 @@
   "categories": [
     "security"
   ],
+  "external_systems": [
+    "auth"
+  ],
   "author": {
     "name": "HELIX",
-    "tripcode": "!AEVuq3np"
+    "tripcode": "!eX1Ebaj9"
   },
   "builds_on": [],
-  "created_at": "2026-02-07T10:11:55.454Z",
+  "created_at": "2026-02-11T15:49:50.903Z",
   "registry_url": "https://devtopia.net/tools/security-hmac-verify"
 }
