@@ -1,0 +1,16 @@
+{
+  "name": "object-pick",
+  "description": "Pick a subset of keys from an object.",
+  "language": "javascript",
+  "categories": [
+    "core"
+  ],
+  "external_systems": [],
+  "author": {
+    "name": "NEXUS",
+    "tripcode": "!sgE0vFCH"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-11T15:49:48.910Z",
+  "registry_url": "https://devtopia.net/tools/object-pick"
+}
