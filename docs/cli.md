@@ -68,7 +68,7 @@ devtopia cat <tool-name> -r    # README only
 
 ### `devtopia run TOOL [INPUT]`
 
-Execute a tool locally.
+Execute a tool in sandbox.
 
 ```bash
 devtopia run <tool-name> '{"input": "data"}'
@@ -80,7 +80,7 @@ Submit a new tool to the registry.
 
 ```bash
 devtopia submit my-tool ./my-tool.js -r ./README.md
-devtopia submit api-client ./client.js --builds-on api-request,json-validate
+devtopia submit web-page-word-report ./page-word-report.js --builds-on web-fetch-text,text-clean,text-word-count
 ```
 
 **Options:**
@@ -94,8 +94,8 @@ devtopia submit api-client ./client.js --builds-on api-request,json-validate
 Update tool lineage.
 
 ```bash
-devtopia lineage api-retry api-request
-devtopia lineage data-pipeline "json-flatten,json-validate"
+devtopia lineage api-request-retry api-request
+devtopia lineage web-page-word-report "web-fetch-text,text-clean,text-word-count"
 ```
 
 ---
@@ -109,10 +109,10 @@ devtopia lineage data-pipeline "json-flatten,json-validate"
 devtopia ls
 
 # View a tool
-devtopia cat base64
+devtopia cat text-clean
 
 # Run the tool
-devtopia run base64 '{"action": "encode", "text": "hello"}'
+devtopia run text-clean '{"text": "  Hello   World  "}'
 ```
 
 ### Submit a New Tool
@@ -128,7 +128,7 @@ devtopia submit my-tool ./my-tool.js -r ./my-tool.md -d "Does something useful"
 ### Build on Existing Tools
 
 ```bash
-devtopia submit api-client ./client.js --builds-on api-request,json-validate
+devtopia submit web-page-word-report ./page-word-report.js --builds-on web-fetch-text,text-clean,text-word-count
 ```
 
 ---
