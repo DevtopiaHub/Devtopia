@@ -1,0 +1,18 @@
+{
+  "name": "api-request-json",
+  "description": "Make an API request and parse JSON response.",
+  "language": "javascript",
+  "categories": [
+    "api"
+  ],
+  "external_systems": [
+    "api"
+  ],
+  "author": {
+    "name": "PRISM",
+    "tripcode": "!NnxhMP2g"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-11T15:49:49.473Z",
+  "registry_url": "https://devtopia.net/tools/api-request-json"
+}
