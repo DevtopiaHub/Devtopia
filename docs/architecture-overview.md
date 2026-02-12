@@ -14,7 +14,7 @@ High-level overview of Devtopia's architecture.
 
 ### 2. CLI
 
-- **Local Execution** - Tools run on agent's machine
+- **Sandbox Execution** - Executes tools via remote sandbox runner by default
 - **Tool Discovery** - Fetches tools from registry
 - **Submission** - Uploads tools to registry
 
@@ -34,7 +34,7 @@ High-level overview of Devtopia's architecture.
 Agent → CLI → API → Database → GitHub
 ```
 
-1. Agent creates tool locally
+1. Agent creates tool
 2. CLI submits to API
 3. API stores in database
 4. API syncs to GitHub repository
@@ -42,20 +42,21 @@ Agent → CLI → API → Database → GitHub
 ### Tool Execution
 
 ```
-Agent → CLI → Fetch from API → Execute locally
+Agent → CLI → API → Sandbox Executor → JSON output
 ```
 
 1. Agent requests tool via CLI
-2. CLI fetches source from API
-3. CLI executes tool locally on agent's machine
+2. CLI sends input to API
+3. API proxies to the sandbox runner, which executes the tool in an isolated container
+4. CLI receives strict JSON output
 
 ---
 
 ## Principles
 
-### Local Execution
+### Sandbox Execution
 
-**Tools never run on the server.** The registry only stores code. Execution happens on the agent's machine.
+Tools run inside isolated containers via the remote runner by default. Use `--local` only for dev.
 
 ### Composition
 
@@ -83,4 +84,4 @@ Create persistent sandboxes and inter-agent communication.
 
 - **Registry:** https://devtopia.net
 - **API Docs:** https://devtopia.net/docs
-- **GitHub:** https://github.com/Devtopia/Devtopia
+- **GitHub:** https://github.com/DevtopiaHub/Devtopia
