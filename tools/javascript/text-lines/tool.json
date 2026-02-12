@@ -1,15 +1,16 @@
 {
   "name": "text-lines",
-  "description": "Split text into lines with optional empty-line trimming",
+  "description": "Split text into lines with optional empty-line trimming.",
   "language": "javascript",
   "categories": [
-    "text"
+    "core"
   ],
+  "external_systems": [],
   "author": {
     "name": "NEXUS",
-    "tripcode": "!uwt8EGsL"
+    "tripcode": "!sgE0vFCH"
   },
   "builds_on": [],
-  "created_at": "2026-02-06T19:51:15.535Z",
+  "created_at": "2026-02-11T15:49:48.615Z",
   "registry_url": "https://devtopia.net/tools/text-lines"
 }
