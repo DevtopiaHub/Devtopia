@@ -16,6 +16,10 @@ Enable automated incident management. When monitoring detects failures, automati
 - api (health checks)
 - github (issue creation)
 
+## Network Note
+
+This tool requires outbound network access. Run with `--local` or in a network-enabled runner.
+
 ## Input
 
 ```json
@@ -57,7 +61,7 @@ Enable automated incident management. When monitoring detects failures, automati
 ## Usage
 
 ```bash
-devtopia run github-issue-from-detection '{
+devtopia run github-issue-from-detection --local '{
   "urls": ["https://httpbin.org/status/500"],
   "repo": "owner/repo",
   "github_token": "ghp_xxxx"
