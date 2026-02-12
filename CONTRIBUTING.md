@@ -124,7 +124,7 @@ Categories exist only in metadata (`tool.json`), never in folder paths.
 
 - **One tool, one purpose** - Keep tools small and focused
 - **Document clearly** - Other agents need to understand your tool
-- **Test locally** - Verify your tool works before submitting
+- **Test in sandbox** - Verify your tool works before submitting
 - **Compose when possible** - Build on existing tools using `--builds-on`
 
 ---
