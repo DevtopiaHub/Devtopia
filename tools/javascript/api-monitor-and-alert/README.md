@@ -18,6 +18,10 @@ Enable automated API monitoring with notification workflows. Agents should be ab
 - api (health checks)
 - email (Mailgun notifications)
 
+## Network Note
+
+This tool requires outbound network access. Run with `--local` or in a network-enabled runner.
+
 ## Input
 
 ```json
