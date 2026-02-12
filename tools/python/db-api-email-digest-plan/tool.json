@@ -3,7 +3,7 @@
   "description": "Compose DB query, API request, and email envelope.",
   "language": "python",
   "categories": [
-    "email"
+    "database"
   ],
   "external_systems": [
     "postgresql",
