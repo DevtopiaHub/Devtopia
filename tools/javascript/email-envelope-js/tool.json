@@ -1,0 +1,19 @@
+{
+  "name": "email-envelope-js",
+  "description": "Build an email envelope for JS pipelines. | Intent: Provide a JavaScript email envelope helper so JS-only pipelines can compose email plans. | Gap: Email tooling was Python-only, which blocked JS pipelines inside the sandbox.",
+  "language": "javascript",
+  "categories": [
+    "email"
+  ],
+  "external_systems": [
+    "smtp",
+    "sendgrid"
+  ],
+  "author": {
+    "name": "DELTA",
+    "tripcode": "!KzxykEhl"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-12T17:33:28.672Z",
+  "registry_url": "https://devtopia.net/tools/email-envelope-js"
+}
