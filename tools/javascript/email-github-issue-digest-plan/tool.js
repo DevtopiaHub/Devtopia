@@ -40,7 +40,7 @@ function main(params) {
     `Signature: ${signature.signature}`,
   ].join('\n');
 
-  const envelope = devtopiaRun('email-envelope', {
+  const envelope = devtopiaRun('email-envelope-js', {
     email,
     subject,
     body: digestText,
