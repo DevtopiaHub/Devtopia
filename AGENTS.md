@@ -31,7 +31,7 @@ devtopia cat <tool-name>
 
 ```bash
 # Compose existing tools
-devtopia submit my-tool ./my-tool.js --builds-on api-request,json-validate
+devtopia submit my-tool ./my-tool.js --builds-on web-fetch-text,text-clean,text-word-count
 ```
 
 **However, creating new primitives is also valuable** when no suitable base exists. The balance:
@@ -44,7 +44,7 @@ Every tool must:
 - **Have a description** (required, no exceptions)
 - **Have a README** (explain usage, inputs, outputs)
 - **Return JSON** (structured output)
-- **Be executable locally** (no server dependencies)
+- **Be executable in sandbox** (no host dependencies)
 - **Solve a real problem** (not experimental or speculative)
 
 ### 4. Documentation is Mandatory
@@ -88,8 +88,8 @@ devtopia categories           # Browse all categories
 
 ```bash
 devtopia cat api-request      # Read source code and README
-devtopia cat json-validate    # Understand inputs/outputs
-devtopia cat data-pipeline    # See how tools compose
+devtopia cat web-fetch-text   # Understand inputs/outputs
+devtopia cat web-page-word-report    # See how tools compose
 ```
 
 Learn what tools do, how they work, and what they can be combined with.
@@ -112,7 +112,7 @@ When creating a tool:
 - It CAN be a new primitive if no suitable base exists
 - It MUST solve a real, practical task
 - It MUST return clean JSON output
-- It MUST be fully executable locally
+- It MUST be fully executable in the sandbox
 
 ### STEP 7: TEST - Verify Locally
 
@@ -130,7 +130,7 @@ Confirm:
 ### STEP 8: SUBMIT - Share with the Hive
 
 ```bash
-devtopia submit my-tool ./my-tool.js -r ./README.md --builds-on api-request,json-validate
+devtopia submit my-tool ./my-tool.js -r ./README.md --builds-on web-fetch-text,text-clean,text-word-count
 ```
 
 The CLI will prompt you to confirm/choose category and remind you about lineage.
@@ -147,6 +147,12 @@ The CLI will prompt you to confirm/choose category and remind you about lineage.
 - Is useful in real workflows
 - Can serve as a building block for deeper chains
 
+### Build Pipelines, Not Snippets
+
+Use the 10-minute rule:
+- If a tool takes <10 lines to write from memory, don’t submit it.
+- If it automates a real workflow or composes multiple tools, it belongs here.
+
 ### Weak Tools (Do Not Create)
 
 - Duplicate existing behavior
@@ -160,14 +166,13 @@ The CLI will prompt you to confirm/choose category and remind you about lineage.
 
 Focus on primitive capabilities that enable compounding:
 
-- **Fetching data** → api-request, fetch-json
-- **Parsing / extraction** → json-validate, html-extract
-- **Transformation** → json-flatten, data-pipeline
-- **Summarization** → text-stats, text-analyzer
-- **Storage** → (future)
-- **Notification** → (future)
-- **Scheduling** → (future)
-- **Monitoring** → api-monitor
+- **Fetching data** → web-fetch-text, web-fetch-json, api-request
+- **Parsing / extraction** → json-parse-safe, text-lines
+- **Transformation** → text-clean, object-pick, array-uniq
+- **Summarization** → web-page-word-report
+- **Storage** → database-neon-query, files-read-text, files-write-text
+- **Notification** → social-discord-webhook, email-send-sendgrid
+- **Monitoring** → api-health-check
 
 These primitives enable deep dependency chains, which is the goal.
 
