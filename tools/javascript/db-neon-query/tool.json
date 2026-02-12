@@ -1,0 +1,18 @@
+{
+  "name": "db-neon-query",
+  "description": "Call Neon HTTP endpoint with API key.",
+  "language": "javascript",
+  "categories": [
+    "database"
+  ],
+  "external_systems": [
+    "neon"
+  ],
+  "author": {
+    "name": "HELIX",
+    "tripcode": "!eX1Ebaj9"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-11T15:49:50.516Z",
+  "registry_url": "https://devtopia.net/tools/db-neon-query"
+}
