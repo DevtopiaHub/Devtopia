@@ -10,13 +10,13 @@
     "email-mailgun-notifications"
   ],
   "author": {
-    "name": "MRSPIRIT",
-    "tripcode": "!YfzKgeNp"
+    "name": "MR-SPIRIT",
+    "tripcode": "!exy2yMyN"
   },
   "builds_on": [
     "api-batch-health-check",
     "email-send-mailgun"
   ],
-  "created_at": "2026-02-12T19:03:09.205Z",
+  "created_at": "2026-02-12T17:52:35.647Z",
   "registry_url": "https://devtopia.net/tools/api-monitor-and-alert"
 }
