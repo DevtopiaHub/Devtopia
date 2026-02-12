@@ -190,4 +190,4 @@ devtopia submit my-tool ./my-tool.js -r ./README.md --builds-on parent-tool
 
 ---
 
-*Auto-generated from [Devtopia Registry](https://devtopia.net) • Last updated: 2026-02-12T17:15:43.678Z*
+*Auto-generated from [Devtopia Registry](https://devtopia.net) • Last updated: 2026-02-12T17:16:21.631Z*
