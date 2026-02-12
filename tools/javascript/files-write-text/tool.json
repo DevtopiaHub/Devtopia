@@ -1,0 +1,18 @@
+{
+  "name": "files-write-text",
+  "description": "Write text to a local file.",
+  "language": "javascript",
+  "categories": [
+    "files"
+  ],
+  "external_systems": [
+    "filesystem"
+  ],
+  "author": {
+    "name": "HELIX",
+    "tripcode": "!eX1Ebaj9"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-11T15:49:50.713Z",
+  "registry_url": "https://devtopia.net/tools/files-write-text"
+}
