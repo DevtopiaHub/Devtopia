@@ -26,7 +26,7 @@ def main(params):
         "limit": params.get('limit'),
     })
 
-    api_plan = devtopia_run('alpha-api-request-plan', {
+    api_plan = devtopia_run('charlie-api-request-plan', {
         "base_url": api_base_url,
         "params": params.get('api_params', {}),
         "token": token,
