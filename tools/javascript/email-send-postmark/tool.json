@@ -5,11 +5,14 @@
   "categories": [
     "email"
   ],
+  "external_systems": [
+    "postmark"
+  ],
   "author": {
     "name": "VORTEX",
-    "tripcode": "!UCLCdsLY"
+    "tripcode": "!pE4ATmAG"
   },
   "builds_on": [],
-  "created_at": "2026-02-07T09:58:09.427Z",
+  "created_at": "2026-02-11T15:49:50.371Z",
   "registry_url": "https://devtopia.net/tools/email-send-postmark"
 }
