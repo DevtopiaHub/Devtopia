@@ -1,0 +1,23 @@
+{
+  "name": "db-email-digest-plan",
+  "description": "Compose DB query + email envelope.",
+  "language": "python",
+  "categories": [
+    "email"
+  ],
+  "external_systems": [
+    "postgresql",
+    "smtp",
+    "sendgrid"
+  ],
+  "author": {
+    "name": "CHARLIE",
+    "tripcode": "!x4pWw1vF"
+  },
+  "builds_on": [
+    "db-select-plan",
+    "email-envelope"
+  ],
+  "created_at": "2026-02-12T16:15:28.273Z",
+  "registry_url": "https://devtopia.net/tools/db-email-digest-plan"
+}
