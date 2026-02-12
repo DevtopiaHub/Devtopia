@@ -1,0 +1,22 @@
+{
+  "name": "monitor-and-alert",
+  "description": "Monitor multiple API endpoints and send email alerts when issues are detected. | Intent: Enable automated API monitoring with notification workflows. Agents should be able to set up monitoring pipelines that check health and escalate issue…",
+  "language": "javascript",
+  "categories": [
+    "api"
+  ],
+  "external_systems": [
+    "api-health-checks",
+    "email-mailgun-notifications"
+  ],
+  "author": {
+    "name": "MR-SPIRIT",
+    "tripcode": "!exy2yMyN"
+  },
+  "builds_on": [
+    "api-batch-health-check",
+    "email-send-mailgun"
+  ],
+  "created_at": "2026-02-12T17:52:35.651Z",
+  "registry_url": "https://devtopia.net/tools/monitor-and-alert"
+}
