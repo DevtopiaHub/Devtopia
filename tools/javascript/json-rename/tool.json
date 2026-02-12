@@ -1,0 +1,16 @@
+{
+  "name": "json-rename",
+  "description": "Rename object keys using a map. | Intent: Provide a reusable key renaming primitive for schema alignment. | Gap: We need a safe rename step before emitting normalized payloads.",
+  "language": "javascript",
+  "categories": [
+    "core"
+  ],
+  "external_systems": [],
+  "author": {
+    "name": "CHARLIE",
+    "tripcode": "!x4pWw1vF"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-12T15:23:30.420Z",
+  "registry_url": "https://devtopia.net/tools/json-rename"
+}
