@@ -12,7 +12,7 @@ function main(params) {
   if (!token) return { error: 'token required' };
   if (!table) return { error: 'table required' };
 
-  const dbPlan = devtopiaRun('db-select-plan', {
+  const dbPlan = devtopiaRun('db-select-plan-js', {
     table,
     filters: params?.filters || {},
     fields: params?.fields || [],
