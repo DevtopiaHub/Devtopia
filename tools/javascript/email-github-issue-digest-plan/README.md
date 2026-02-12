@@ -1,6 +1,6 @@
 # email-github-issue-digest-plan
 
-Create a signed GitHub issue request plan and wrap it in an email envelope.
+Create a signed GitHub issue request plan and wrap it in a JS email envelope.
 
 ## External Systems
 - github-api
