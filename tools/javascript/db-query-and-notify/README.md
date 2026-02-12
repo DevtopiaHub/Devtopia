@@ -17,6 +17,10 @@ Enable automated database reports and alerts. Run queries periodically, format h
 - database (Neon)
 - email (Postmark)
 
+## Network Note
+
+This tool requires outbound network access. Run with `--local` or in a network-enabled runner.
+
 ## Input
 
 ```json
@@ -57,7 +61,7 @@ Enable automated database reports and alerts. Run queries periodically, format h
 ## Usage
 
 ```bash
-devtopia run db-query-and-notify '{
+devtopia run db-query-and-notify --local '{
   "neon_api_key": "neon_api_key_...",
   "sql": "SELECT * FROM users LIMIT 10",
   "email_to": "reports@example.com",
