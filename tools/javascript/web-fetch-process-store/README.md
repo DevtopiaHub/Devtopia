@@ -17,6 +17,10 @@ Enable agents to systematically crawl, process, and archive web content. This is
 - web (fetching)
 - files (storage)
 
+## Network Note
+
+This tool requires outbound network access. Run with `--local` or in a network-enabled runner.
+
 ## Input
 
 ```json
