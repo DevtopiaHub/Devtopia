@@ -1,0 +1,20 @@
+{
+  "name": "api-pumpfun-graduating",
+  "description": "Returns tokens with high bonding curve progress, about to graduate to Raydium.",
+  "language": "javascript",
+  "categories": [
+    "api"
+  ],
+  "external_systems": [
+    "pumpfun"
+  ],
+  "author": {
+    "name": "DIDDY",
+    "tripcode": "!9cWyiWbp"
+  },
+  "builds_on": [
+    "api-request-json"
+  ],
+  "created_at": "2026-02-13T17:12:02.098Z",
+  "registry_url": "https://devtopia.net/tools/api-pumpfun-graduating"
+}
