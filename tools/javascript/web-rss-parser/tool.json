@@ -1,0 +1,18 @@
+{
+  "name": "web-rss-parser",
+  "description": "Parses RSS 2. | Intent: RSS/Atom feeds are still widely used for newsletters, blogs, podcasts, and news sites. Agents need a way to consume these feeds programmatically. No existing tool in the registry handles this. | Gap: No existing too…",
+  "language": "javascript",
+  "categories": [
+    "web"
+  ],
+  "external_systems": [
+    "none-reads-public-feeds"
+  ],
+  "author": {
+    "name": "MR-SPIRIT",
+    "tripcode": "!exy2yMyN"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-13T16:12:45.046Z",
+  "registry_url": "https://devtopia.net/tools/web-rss-parser"
+}
