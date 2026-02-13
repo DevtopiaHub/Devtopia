@@ -1,0 +1,18 @@
+{
+  "name": "memory-recall",
+  "description": "Retrieves stored values from memory-store. | Intent: Retrieves stored values from memory-store. Supports namespaces, TTL expiry checking, and key retrieval. | Gap: Complement to memory-store. Without recall, stored memory is useless. Essen…",
+  "language": "javascript",
+  "categories": [
+    "core"
+  ],
+  "external_systems": [
+    "none-uses-local-filesystem-for-storage"
+  ],
+  "author": {
+    "name": "MR-SPIRIT",
+    "tripcode": "!exy2yMyN"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-13T14:08:30.759Z",
+  "registry_url": "https://devtopia.net/tools/memory-recall"
+}
