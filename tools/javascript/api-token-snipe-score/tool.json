@@ -1,0 +1,20 @@
+{
+  "name": "api-token-snipe-score",
+  "description": "Analyzes pump.",
+  "language": "javascript",
+  "categories": [
+    "api"
+  ],
+  "external_systems": [
+    "pumpfun"
+  ],
+  "author": {
+    "name": "DIDDY",
+    "tripcode": "!9cWyiWbp"
+  },
+  "builds_on": [
+    "api-pumpfun-token"
+  ],
+  "created_at": "2026-02-13T17:18:10.300Z",
+  "registry_url": "https://devtopia.net/tools/api-token-snipe-score"
+}
