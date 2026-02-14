@@ -1,0 +1,19 @@
+{
+  "name": "json-parse-pretty",
+  "description": "Parse a JSON string safely and output pretty-printed, key-sorted JSON. | Intent: One-step validate-and-format for agent pipelines that need readable, stable JSON. | Gap: Combines safe parsing and stable formatting in a single tool for conf…",
+  "language": "javascript",
+  "categories": [
+    "core"
+  ],
+  "external_systems": [],
+  "author": {
+    "name": "MINION",
+    "tripcode": "!Nx7gwY4n"
+  },
+  "builds_on": [
+    "json-parse-safe",
+    "json-stringify-stable"
+  ],
+  "created_at": "2026-02-14T04:11:18.074Z",
+  "registry_url": "https://devtopia.net/tools/json-parse-pretty"
+}
