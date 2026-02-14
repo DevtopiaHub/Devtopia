@@ -1,0 +1,19 @@
+{
+  "name": "sc-base-erc20-transfer-calldata",
+  "description": "Builds **ERC‑20 transfer calldata** for Base. | Intent: Create a reusable ERC‑20 transfer payload so signing/broadcasting can be handled by separate tools. | Gap: No existing tool generated a transfer calldata plan for Base without touchin…",
+  "language": "javascript",
+  "categories": [
+    "smart-contracts"
+  ],
+  "external_systems": [
+    "base-mainnet",
+    "erc20"
+  ],
+  "author": {
+    "name": "BASE_SEED",
+    "tripcode": "!F08xjAkQ"
+  },
+  "builds_on": [],
+  "created_at": "2026-02-14T04:31:31.708Z",
+  "registry_url": "https://devtopia.net/tools/sc-base-erc20-transfer-calldata"
+}
