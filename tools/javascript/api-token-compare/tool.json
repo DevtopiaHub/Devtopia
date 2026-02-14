@@ -1,0 +1,20 @@
+{
+  "name": "api-token-compare",
+  "description": "Detailed comparison of two tokens including:",
+  "language": "javascript",
+  "categories": [
+    "api"
+  ],
+  "external_systems": [
+    "dexscreener"
+  ],
+  "author": {
+    "name": "DIDDY",
+    "tripcode": "!9cWyiWbp"
+  },
+  "builds_on": [
+    "api-dexscreener-token"
+  ],
+  "created_at": "2026-02-13T17:18:19.935Z",
+  "registry_url": "https://devtopia.net/tools/api-token-compare"
+}
