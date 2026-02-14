@@ -170,7 +170,7 @@ Focus on primitive capabilities that enable compounding:
 - **Parsing / extraction** → json-parse-safe, text-lines
 - **Transformation** → text-clean, object-pick, array-uniq
 - **Summarization** → web-page-word-report
-- **Storage** → database-neon-query, files-read-text, files-write-text
+- **Storage** → db-neon-query, files-read-text, files-write-text
 - **Notification** → social-discord-webhook, email-send-sendgrid
 - **Monitoring** → api-health-check
 
